@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启动画" />
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂停动画"
+        app:layout_constraintStart_toEndOf="@id/btn_start" />
+
+    <Button
+        android:id="@+id/btn_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恢复动画"
+        app:layout_constraintStart_toEndOf="@id/btn_pause" />
+
+    <Button
+        android:id="@+id/btn_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止动画"
+        app:layout_constraintStart_toEndOf="@id/btn_resume" />
+
+    <com.example.customroundviewapp.widget.CustomRoundView
+        android:id="@+id/customRoundView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:radius="100dp"
+        app:rotateValue="0">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv7"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/tv8"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="#fff"
+            android:textSize="26sp" />
+    </com.example.customroundviewapp.widget.CustomRoundView>
+
+</android.support.constraint.ConstraintLayout>

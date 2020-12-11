@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomRoundView">
+        <!--半径-->
+        <attr name="radius" format="dimension"></attr>
+        <!--旋转值-->
+        <attr name="rotateValue" format="float"></attr>
+    </declare-styleable>
+</resources>
